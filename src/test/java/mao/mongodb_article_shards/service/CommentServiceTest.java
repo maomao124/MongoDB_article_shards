@@ -78,6 +78,9 @@ class CommentServiceTest
     void findCommentList()
     {
         List<Comment> commentList = commentService.findCommentList();
+
+        System.out.println("总数：" + commentList.size());
+
         for (Comment comment : commentList)
         {
             System.out.println(comment);
